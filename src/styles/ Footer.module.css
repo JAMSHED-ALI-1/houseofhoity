@@ -1,0 +1,120 @@
+.footer {
+  background-color: #111;
+  color: #ccc;
+  padding: 60px 0 0;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 14px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Brand */
+.brand {
+  flex: 1;
+  min-width: 180px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: 3px;
+  margin: 0 0 10px;
+}
+
+.tagline {
+  color: #888;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Links */
+.links {
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.column h4 {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0 0 16px;
+}
+
+.column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.column ul li a {
+  color: #888;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.column ul li a:hover {
+  color: #fff;
+}
+
+/* Bottom bar */
+.bottom {
+  margin-top: 48px;
+  border-top: 1px solid #222;
+  padding: 20px 24px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  color: #555;
+  font-size: 13px;
+}
+
+.legal {
+  display: flex;
+  gap: 20px;
+}
+
+.legal a {
+  color: #555;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.legal a:hover {
+  color: #aaa;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .links {
+    gap: 32px;
+  }
+
+  .bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+}
